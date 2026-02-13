@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grattis på Födelsedagen! 💖🎂💖</title>
+<title>Glad Alla Hjärtans Dag! 💖❤️‍🔥💖</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
 <style>
   *{ margin:0; padding:0; box-sizing:border-box; }
@@ -226,12 +226,11 @@ animation: heartBeat 1.2s ease-in-out infinite, titleIn 1.4s cubic-bezier(.22,1,
 100% { transform: scale(1); }
 }
 
-/* ── confetti burst on load ── */
+/* ── heart burst on load ── */
 .confetti-piece {
 position: fixed;
 z-index: 10;
-width: 10px; height: 10px;
-border-radius: 2px;
+font-size: 16px;
 animation: confettiFall 3.5s ease-out forwards;
 pointer-events: none;
 }
@@ -261,8 +260,8 @@ pointer-events: none;
 <!-- main card -->
 
 <div class="card">
-  <div class="cake-emoji">🎂</div>
-  <h1>Grattis på Födelsedagen!</h1>
+  <div class="cake-emoji">💝</div>
+  <h1>Glad Alla Hjärtans Dag!</h1>
   <p class="subtitle">💕 En alldeles speciell dag för en alldeles speciell person 💕</p>
 
   <div class="heart-divider">
@@ -279,7 +278,7 @@ pointer-events: none;
 
   <div class="gift-section">
     <div class="gift-icon">🎁</div>
-    <h2>Din födelsedagspresent</h2>
+    <h2>Din present</h2>
     <p class="gift-text">
       I påsk tar jag med dig på ett äventyr till <strong>Bomba Spa</strong>! 🏔️
     </p>
@@ -331,20 +330,17 @@ pointer-events: none;
   }
   setInterval(spawnSparkle, 300);
 
-  // ── confetti burst ──
-  const colors = ['#e84393','#fd79a8','#f9ca24','#ff6b6b','#a29bfe','#55efc4','#ffeaa7','#ff7675'];
-  for (let i = 0; i < 120; i++) {
-    const c = document.createElement('div');
+  // ── heart burst ──
+  const burstHearts = ['❤️','💖','💗','💕','💘','💝','♥️','🩷'];
+  for (let i = 0; i < 80; i++) {
+    const c = document.createElement('span');
     c.className = 'confetti-piece';
+    c.textContent = burstHearts[Math.floor(Math.random() * burstHearts.length)];
     c.style.left = (Math.random() * 100) + '%';
     c.style.top = '-10px';
-    c.style.background = colors[Math.floor(Math.random() * colors.length)];
+    c.style.fontSize = (12 + Math.random() * 18) + 'px';
     c.style.animationDuration = (4 + Math.random() * 3) + 's';
     c.style.animationDelay = Math.random() * 1.5 + 's';
-    c.style.transform = `rotate(${Math.random()*360}deg)`;
-    c.style.width = (6 + Math.random() * 8) + 'px';
-    c.style.height = (6 + Math.random() * 8) + 'px';
-    c.style.borderRadius = Math.random() > 0.5 ? '50%' : '2px';
     document.body.appendChild(c);
   }
 </script>
