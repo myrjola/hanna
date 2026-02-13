@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Grattis på Födelsedagen! 🎂</title>
+<title>Grattis på Födelsedagen! 💖🎂💖</title>
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
 <style>
   *{ margin:0; padding:0; box-sizing:border-box; }
@@ -263,34 +263,36 @@ pointer-events: none;
 <div class="card">
   <div class="cake-emoji">🎂</div>
   <h1>Grattis på Födelsedagen!</h1>
-  <p class="subtitle">En alldeles speciell dag för en alldeles speciell person</p>
+  <p class="subtitle">💕 En alldeles speciell dag för en alldeles speciell person 💕</p>
 
   <div class="heart-divider">
     <hr>
-    <span>💖</span><span>💗</span><span>❤️</span><span>💗</span><span>💖</span>
+    <span>💘</span><span>💖</span><span>❤️‍🔥</span><span>💖</span><span>💘</span>
     <hr>
   </div>
 
   <p class="message">
-    Idag firar vi dig – den mest underbara, vackra och fantastiska människan i världen.
-    Må denna dag vara fylld med glädje, kärlek och alla de vackraste stunder du förtjänar.
-    Du gör världen till en bättre plats bara genom att vara du. 🌹
+    Idag firar vi dig – mitt hjärtas stora kärlek. 💗
+    Må denna dag vara fylld med värme, ömhet och alla de vackraste stunder du förtjänar.
+    Du är hela min värld och jag älskar dig mer för varje dag som går. ❤️‍🔥
   </p>
 
   <div class="gift-section">
     <div class="gift-icon">🎁</div>
     <h2>Din födelsedagspresent</h2>
     <p class="gift-text">
-      Ett läderväska-kit från <strong>Babylon Leather</strong> – dags att skapa din alldeles egna väska! 👜
+      I påsk tar jag med dig på ett äventyr till <strong>Bomba Spa</strong>! 🏔️
     </p>
     <p class="gift-text">
-      Hoppas du får jättekul med att sy och skapa något vackert med dina egna händer! ✨
+      Du väljer själv vad vi gör – fat biking genom det vackra vinterlandskapet,
+      en spännande safari, eller något helt annat som du drömmer om.
+      Det här är din resa, ditt äventyr! ✨
     </p>
     <div class="activity-icons">
-      <span class="activity" title="Läder">🧵</span>
-      <span class="activity" title="Väska">👜</span>
-      <span class="activity" title="Hantverk">✂️</span>
-      <span class="activity" title="Kreativitet">🎨</span>
+      <span class="activity" title="Fat Biking">🚴‍♀️</span>
+      <span class="activity" title="Safari">🦌</span>
+      <span class="activity" title="Spa">🧖‍♀️</span>
+      <span class="activity" title="Äventyr">🌲</span>
     </div>
   </div>
 
@@ -300,7 +302,7 @@ pointer-events: none;
 <script>
   // ── floating hearts ──
   const heartsBg = document.getElementById('heartsBg');
-  const heartSymbols = ['❤️','💖','💗','💕','💓','🩷','♥️','💘'];
+  const heartSymbols = ['❤️','💖','💗','💕','💓','🩷','♥️','💘','❤️‍🔥','💝','💞','🫀'];
   function spawnHeart() {
     const h = document.createElement('span');
     h.className = 'heart';
@@ -312,8 +314,8 @@ pointer-events: none;
     heartsBg.appendChild(h);
     setTimeout(() => h.remove(), 16000);
   }
-  setInterval(spawnHeart, 400);
-  for (let i = 0; i < 15; i++) setTimeout(spawnHeart, i * 200);
+  setInterval(spawnHeart, 250);
+  for (let i = 0; i < 25; i++) setTimeout(spawnHeart, i * 150);
 
   // ── sparkles ──
   const sparkleContainer = document.getElementById('sparkles');
